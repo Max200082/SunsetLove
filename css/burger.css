@@ -1,0 +1,49 @@
+
+.header__menu-burger {
+	display: none;
+}
+.menu-burger {
+}
+.menu-burger__list {
+	text-align: center;
+	margin-top: 50px;
+}
+.menu-burger__item {
+
+}
+
+.menu-burger__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.menu-burger__link {
+	color: white;
+}
+
+.menu-burge__btn {
+	display: none;
+}
+
+@media(max-width:984px){
+	
+	.header__menu-burger {
+		position: absolute;
+		right: 25px;
+		top: 45px;
+		width: 200px;
+		height: 400px;
+		background: rgba(99,102,106, 0.8);
+		border: 1px solid white;
+		z-index: 4;
+		transition: all right 0.3s ease 0s;
+	}
+
+	.header__menu-burger._active {
+		display: block;
+	}
+
+	.menu-burge__btn {
+		display: block;
+		text-align: center;
+		margin-top: 25px;
+	}
+}
